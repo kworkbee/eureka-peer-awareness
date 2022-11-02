@@ -1,0 +1,11 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: server1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:3002/eureka, http://localhost:3003/eureka   # 3 Sample Peers

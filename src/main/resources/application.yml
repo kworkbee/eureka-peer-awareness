@@ -1,0 +1,14 @@
+eureka:
+  instance:
+    registry:
+      default-open-for-traffic-count: 0   # Enables Peering Eureka Nodes (Same as eureka.server.defaultOpenForTrafficCount - Backend Compatibility)
+  client:
+    region: G1Region                      # default: "us-east-1"
+    register-with-eureka: false           # Used as Eureka Server
+    fetch-registry: false
+  environment: test
+  datacenter: G1DataCenter                # default: "default"
+
+logging:
+  level:
+    org.springframework.cloud: DEBUG
